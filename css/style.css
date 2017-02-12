@@ -67,6 +67,7 @@ WELCOME PAGE
 .image-wrapper {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   /*text-align: center;*/
 }
 
@@ -80,11 +81,13 @@ WELCOME PAGE
 }
 
 .welcome-h2-wrap {
+  width: 70%;
   margin-top: 1em;
   border-top-left-radius: 30px;
   //transform: rotate(-19deg);
   text-align: center;
   padding: 0 1em;
+  align-self: center;
 }
 
 .welcome-h2-wrap span {
@@ -118,8 +121,9 @@ WELCOME PAGE
   justify-content: center;
   width: 100%;
   display: flex;
-  position: absolute;
+  position: fixed;
   bottom: 0;
+  z-index: 10;
 }
 
 #down-arrow {

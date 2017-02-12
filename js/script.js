@@ -14,6 +14,16 @@ $(document).ready(function(){
     }, 300);
   })
   
+  // Hide ScrollDown Arrow
+  
+  $(window).scroll(function() {
+    if ($(this).scrollTop() > 2) {
+      $('#down-arrow').css('display', 'none');
+        // apply effects and animations
+    }else{
+      $('#down-arrow').css('display', 'flex');
+    }
+  });
   
   // Burger Button
 
@@ -31,5 +41,7 @@ $(document).ready(function(){
      }
   
   */
+  
+  
   
 });
